@@ -1,0 +1,11 @@
+What i was doing:
+In createSquareGraph, I was testing out the function.
+This function will operate on an array: [...A-P]
+This array must be square (checked in the function)
+A matrix is created inside the function
+
+Next is to get the surrounded elements inside the matrix:
+eg [i -1], [j], [i-1], [j+1],... and add each edge to the graph
+make sure to check whether the index is in bounds before adding
+
+After that, you can add the function to the graph prototype
