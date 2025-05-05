@@ -1,11 +1,15 @@
-What i was doing:
-In createSquareGraph, I was testing out the function.
-This function will operate on an array: [...A-P]
-This array must be square (checked in the function)
-A matrix is created inside the function
+The initialization of the Graph data structure is done!
 
-Next is to get the surrounded elements inside the matrix:
-eg [i -1], [j], [i-1], [j+1],... and add each edge to the graph
-make sure to check whether the index is in bounds before adding
+Next is to reason about the conceptualization of the game itself
+with the tools in the toolbelt.
 
-After that, you can add the function to the graph prototype
+Initial thoughts:
+. Generate some random (capital) letters
+. Run DFS on the graph
+. For each word, check if the word formed by DFS is in the global dictionary
+. Create a local dictionary for valid words found during DFS
+
+. On user input, check the input vs the local dictionary
+
+Notes:
+. Experiment on the different combinations of vowels vs consonant (which combo leads to the highest local dict count)
